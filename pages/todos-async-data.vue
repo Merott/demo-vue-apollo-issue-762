@@ -5,15 +5,6 @@
 <script>
 import gql from "graphql-tag";
 
-const TODOS_QUERY = gql`
-  query {
-    todos {
-      id
-      title
-    }
-  }
-`;
-
 export default {
   async asyncData(context) {
     const client = context.app.apolloProvider.defaultClient;
